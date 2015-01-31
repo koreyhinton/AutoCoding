@@ -13,7 +13,7 @@ class Person: AutoCoded, AutoCoding {
 }
 ```
 
-### NSKeyedArchiver
+### NSKeyedArchiver Example
 ```
 var bob = Person()
 bob.name = "Bob"
