@@ -7,9 +7,19 @@ All you have to do is inherit from AutoCoded class and implement the autoEncodin
 
 ```
 class Person: AutoCoded, AutoCoding {
-    var autoEncodings = ["name","age"]
-    var name: String?
-    var age: Int?
+    var autoEncodings: NSArray = ["name","age"]
+    var name: String!
+    var age: NSNumber!
+
+    init(name: String,age: NSNumber) {
+        self.name = name
+        self.age = age
+        super.init()
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
 }
 ```
 
