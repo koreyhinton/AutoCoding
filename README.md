@@ -25,9 +25,7 @@ class Person: AutoCoded, AutoCoding {
 
 ### NSKeyedArchiver Example
 ```
-var bob = Person()
-bob.name = "Bob"
-bob.age = 25
+var bob = Person(name:"Bob", age:25)
 
 // Archive
 let data = NSKeyedArchiver.archivedDataWithRootObject(bob)
