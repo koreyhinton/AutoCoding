@@ -42,3 +42,6 @@ if let person = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? Person {
 The easiest way to use this is with the snippet found in my [SwiftXcodeSnippets](https://github.com/koreyhinton/SwiftXcodeSnippets).
 Copy [C9BF586F-7D6D-4687-A10C-0C78A867B795.codesnippet](https://github.com/koreyhinton/SwiftXcodeSnippets/blob/master/C9BF586F-7D6D-4687-A10C-0C78A867B795.codesnippet) to ~/Library/Developer/Xcode/UserData/CodeSnippets/.
 
+![](screenshots/snippet-mini.png)
+
+![](screenshots/snippet-full.png)
