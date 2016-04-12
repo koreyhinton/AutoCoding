@@ -23,14 +23,14 @@ class AutoCoded: NSObject, NSCoding {
         setValue(decodings, forKey: AutoCodingKey)
         
         for decoding in decodings {
-            setValue(aDecoder.decodeObjectForKey(decoding as! String), forKey: decoding as! String)
+            setValue(aDecoder.decodeObjectForKey(decoding as! String)!, forKey: decoding as! String)
         }
     }
     
     func encodeWithCoder(aCoder: NSCoder) {
         aCoder.encodeObject(valueForKey(AutoCodingKey), forKey: AutoCodingKey)
         for encoding in valueForKey(AutoCodingKey) as! NSArray {
-            aCoder.encodeObject(valueForKey(encoding as! String), forKey: encoding as! String)
+            aCoder.encodeObject(valueForKey(encoding as! String)!, forKey: encoding as! String)
         }
     }
 }
